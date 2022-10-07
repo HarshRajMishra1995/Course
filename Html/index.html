@@ -9,5 +9,44 @@
 </head>
 <body>
   <p>Here we will see all types of tags and try to understand their symantics</p>
+  <!-- <input disabled form=""/> -->
+  <h1>
+    Form
+  </h1>
+  <!-- so novalidate is an attribute of form tag that remove validation from the input tag -->
+  <form action="http://localhost:8000/form" method="post">
+    <label for="">username : <input required  type="text" name="username" value="xyz" ></label>
+    orange<input type="radio" value="orange" checked name="fruit">
+    apple<input type="radio" value="apple" name="fruit">
+    <input type="file" name="file">
+    <input type="color" name="color" id="">
+    <input type="date" name="date" id="">
+    <button>Submit</button>
+  </form>
+  <h3>Input Types</h3>
+  <input type="file" accept=".docx">
+  <fieldset>
+    <legend>Address</legend>
+    <label for="">house no</label><input type="text" name="house no" id="">
+    <label for="">city</label><input type="text" name="city">
+    <label for="">state</label><input type="text" name="state">
+  </fieldset>
+  <input type="color" name="" id="">
+  <input type="date" name="" id="">
+  <input type="datetime-local" name="" id="">
+  <!-- <input type="hidden"> user not able to see this on view portS -->
+  <input type="range" value="15" max="50">
+<iframe width="420" height="345" src="https://www.youtube.com/watch?v=daRQ5ZvdD_U">
+</iframe>
+<label for="myBrowser">Choose a browser from this list:</label>
+<input list="browsers" id="myBrowser" name="myBrowser" value="Chrome"/>
+<datalist id="browsers">
+  <option value="Chrome"></option>
+  <option value="Firefox"></option>
+  <option value="Internet Explorer"></option>
+  <option value="Opera"></option>
+  <option value="Safari"></option>
+  <option value="Microsoft Edge"></option>
+</datalist>
 </body>
 </html>
